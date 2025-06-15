@@ -6,11 +6,11 @@
 <manifest>
   <include name="../platforms/msmnile.xml" />
 
-  <project path="device/xiaomi/miatoll" name="AOSPA/android_device_xiaomi_miatoll" remote="aospa" revision="vauxite" />
+  <project path="device/xiaomi/miatoll" name="BladeRunner-A2C/proprietary_device_xiaomi_miatoll" remote="github" revision="vauxite" />
   <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="vauxite" />
-  <project path="kernel/xiaomi/miatoll" name="AOSPA/android_kernel_xiaomi_miatoll" remote="aospa" revision="vauxite" />
+  <project path="kernel/xiaomi/miatoll" name="BladeRunner-A2C/kernel_xiaomi_miatoll" remote="github" revision="vauxite" />
   <project path="vendor/nxp/opensource/halimpl" name="AOSPA/android_vendor_nxp_opensource_halimpl" remote="aospa" revision="vauxite-pn5xx" />
   <project path="vendor/nxp/opensource/hidlimpl" name="AOSPA/android_vendor_nxp_opensource_hidlimpl" remote="aospa" revision="vauxite-pn5xx" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="AOSPA/android_vendor_qcom_opensource_audio-hal_st-hal" remote="aospa" revision="vauxite-855" />
-  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="blobs" revision="vauxite" clone-depth="1" />
+  <project path="vendor/xiaomi/miatoll" name="BladeRunner-A2C/proprietary_vendor_xiaomi_miatoll" remote="github" revision="vauxite" />
 </manifest>

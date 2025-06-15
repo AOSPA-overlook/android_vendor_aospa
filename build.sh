@@ -221,6 +221,13 @@ if [ -d "$DIR_ROOT/kernel_platform/" ] && (
     eval "${EXTRA_KERNEL_FLAGS}" ANDROID_KERNEL_OUT="${TARGET_KERNEL_OUT}" KERNEL_VARIANT=gki ./kernel_platform/build/android/prepare_vendor.sh
 fi
 
+# If we aren't in Jenkins, use the engineering tag
+if [ -z "${BUILD_NUMBER}" ]; then
+    export FILE_NAME_TAG=eng.$USER
+else
+    export FILE_NAME_TAG=$BUILD_NUMBER
+fi
+
 # Build a specific module(s)
 if [ "${MODULES}" ]; then
     m ${MODULES[@]} "$CMD"
